@@ -55,3 +55,18 @@ function secondLargest(arr){
     }
     return second;
 }
+//printVowelsAndConsonants
+function printVowelsAndConsonants(s){
+    let vowels ="aeiou";
+    let consonants="";
+    for(let i=0; i<s.length;i++){
+        let currentChar = s.charAt(i)
+        if(vowels.includes(currentChar)){
+         console.log(currentChar + '\n');
+        } else{
+            consonants +=currentChar;
+        }
+    }
+    console.log(consonants + '\n');
+}
+printVowelsAndConsonants("Reyyen Cuneyt");
