@@ -70,3 +70,20 @@ function printVowelsAndConsonants(s){
     console.log(consonants + '\n');
 }
 printVowelsAndConsonants("Reyyen Cuneyt");
+//Try, Catch, and Finally
+
+function reveseString(s){
+    try{
+        return s.split('').reverse().join('')
+    }
+    catch (error){
+        console.log(error.message);
+        return s;
+    }
+    finally{
+        console.log("this is the end of the program");
+    }
+
+}
+console.log(reveseString("reyyen"))
+console.log(reveseString("cuneyt"))
